@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- link to the css file -->
+        <link rel="stylesheet" href="style.css">
+        <!-- imported font from google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+        <!-- page title -->
+        <title>Unit Converter</title>
+    </head>
+    <body>
+        <main class="container">
+            <section class="input-section">
+                <div class="input-header">
+                    <h3>Metric/ Imperial unit conversion</h3>
+                    <p class="number-input">0</p>
+                </div>
+            </section>
+
+            <section class="converter-section">
+                <!-- length -->
+                <div class="length">
+                    <p class="length_header">Length (Meter/ Feet)</p>
+                    <div class="length_units">
+                        <p>0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
+                    </div>
+                </div>
+
+                <!-- volume -->
+                <div class="volume">
+                    <p class="volume_header">Volume (Liters/ Gallons)</p>
+                    <div class="volume_units">
+                        <p>0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
+                    </div>
+                </div>
+
+                <!-- mass -->
+                <div class="mass">
+                    <p class="mass_header">Mass (Kilograms/ Pounds)</p>
+                    <div class="mass_units">
+                        <p>0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- link to the js file -->
+        <script defer src="script.js"></script>
+    </body>
+</html>

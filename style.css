@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+.container {
+    border: 1px solid black;
+    width: 35%;
+    text-align: center;
+    margin: 12rem auto;
+}
+
+.input-section {
+    padding: 3.3rem 0 2.9rem 0;
+    border-bottom: 1px solid black;
+}
+
+.input-header {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.input-section h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.input-section p {
+    font-size: 6.1rem;
+    font-weight: 800;
+    padding-top: 1.5rem;
+}
+
+.converter-section {
+    padding: 2.3rem 0;
+}
+
+.volume {
+    padding: 1.7rem 0;
+}
+
+.length_header, .volume_header, .mass_header {
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
