@@ -14,15 +14,16 @@ body {
 }
 
 .container {
-    width: 35%;
+    /* width: 35%;  will not be there */
     text-align: center;
-    margin: 12rem auto;
-    /* border: 1px solid rgb(10, 10, 77); */
+    /* margin: 12rem auto;  need to tweak */
+    /* border: 1px solid black; */
+    border: 1px solid rgb(24, 24, 46);
 }
 
 .input-section {
     background-image: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
-    padding: 3.3rem 0;
+    padding: 3.3rem 0; 
     border-radius: 30px 30px 0 0;
 }
 
@@ -41,7 +42,7 @@ body {
 input {
     background-color: rgba(0, 0, 0, 0.05);
     color: white;
-    font-size: 6.1rem;
+    font-size: 6.1rem;  
     border: none;
     outline: none;
     width: 85%;
@@ -52,7 +53,7 @@ input {
 
 .converter-section {
     background-color: hsl(215, 28%, 17%);
-    padding: 2.3rem 0;
+    padding: 3.5rem 0;
     border-radius: 0 0 30px 30px;
 }
 
@@ -68,4 +69,75 @@ input {
 
 .units p{
     color: hsl(0, 0%, 82%);
+}
+
+@media screen and (max-width: 767px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        padding: 0 0.9rem;
+    }
+
+    .container {
+        width: 100%;
+        margin: 4rem 0;
+    }
+
+    .input-section {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .input-header {
+        width: 100%;
+    }
+
+    .input-section h3 {
+        font-size: 1rem;
+    }
+
+    input {
+        font-size: 4rem;
+        width: 70%;
+    }
+
+    .converter-section {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .length_header, .volume_header, .mass_header {
+        font-size: 0.9rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .units p{
+        font-size: 0.85rem;
+    }
+
+    .units span {
+        display: block;
+        padding-top: 0.3rem;
+    }
+
+    .units strong {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 460px) and (max-width: 767px) {
+    .container {
+        width: 97%;
+        max-width: 420px;
+        margin: 4rem auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 75%;
+        max-width: 600px;
+        margin: 7rem auto;
+    }
 }

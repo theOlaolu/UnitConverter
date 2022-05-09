@@ -15,16 +15,17 @@ inputEl.onchange = unitConverter;
 
 function unitConverter(event) {
     // length converter
-    let meterToFt = event.target.value * 3.28084;
-    toFeet.textContent = `${event.target.value} meters = ${meterToFt.toFixed(3)} feet`;
     let ftToMeter = event.target.value / 3.28084;
     toMeter.textContent = `${event.target.value} feet = ${ftToMeter.toFixed(3)} meters`;
+    let meterToFt = event.target.value * 3.28084;
+    toFeet.textContent = `${event.target.value} meters = ${meterToFt.toFixed(3)} feet`;
+    
 
     // volume converter
     let ltrToGallon = event.target.value * 0.264172
     toGallon.textContent = `${event.target.value} liters = ${ltrToGallon.toFixed(3)} gallons`;
     let gallonToLtr = event.target.value / 0.264172;
-    toLiter.textContent = `${event.target.value} liters = ${gallonToLtr.toFixed(3)} gallons`;
+    toLiter.textContent = `${event.target.value} gallons = ${gallonToLtr.toFixed(3)} liters`;
 
     // mass converter
     let kiloToPound = event.target.value * 2.20462;
