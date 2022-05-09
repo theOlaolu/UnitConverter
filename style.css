@@ -49,6 +49,10 @@ input {
     border-radius: 10px;
 }
 
+::placeholder {
+    color: rgba(0, 0, 0, 0.05);
+}
+
 .converter-section {
     background-color: hsl(215, 28%, 17%);
     padding: 3.5rem 0;
