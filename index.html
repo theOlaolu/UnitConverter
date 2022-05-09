@@ -18,7 +18,7 @@
             <section class="input-section">
                 <div class="input-header">
                     <h3>Metric/ Imperial unit conversion</h3>
-                    <p class="number-input">0</p>
+                    <input class="num-input" type="number" minlength="0" maxlength="6">
                 </div>
             </section>
 
@@ -26,24 +26,30 @@
                 <!-- length -->
                 <div class="length">
                     <p class="length_header">Length (Meter/ Feet)</p>
-                    <div class="length_units">
-                        <p>0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
+                    <div class="units">
+                        <p>
+                            <span id="to-feet">0 meters = 0.000 feet</span> | <span id="to-meter">0 feet = 0.000 meters</span>
+                        </p>
                     </div>
                 </div>
 
                 <!-- volume -->
                 <div class="volume">
                     <p class="volume_header">Volume (Liters/ Gallons)</p>
-                    <div class="volume_units">
-                        <p>0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
+                    <div class="units">
+                        <p>
+                            <span id="to-gallon">0 liters = 0.000 gallons</span> | <span id="to-liter">0 gallons = 0.000 liters</span>
+                        </p>
                     </div>
                 </div>
 
                 <!-- mass -->
                 <div class="mass">
                     <p class="mass_header">Mass (Kilograms/ Pounds)</p>
-                    <div class="mass_units">
-                        <p>0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
+                    <div class="units">
+                        <p>
+                            <span id="to-pound">0 kilos = 0.000 pounds</span> | <span id="to-kilo">0 pounds = 0.000 kilos</span>
+                        </p>
                     </div>
                 </div>
             </section>

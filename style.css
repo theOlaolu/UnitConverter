@@ -9,16 +9,21 @@ html {
     font-size: 16px;
 }
 
+body {
+    background-color: rgb(24, 24, 46);
+}
+
 .container {
-    border: 1px solid black;
     width: 35%;
     text-align: center;
     margin: 12rem auto;
+    /* border: 1px solid rgb(10, 10, 77); */
 }
 
 .input-section {
-    padding: 3.3rem 0 2.9rem 0;
-    border-bottom: 1px solid black;
+    background-image: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
+    padding: 3.3rem 0;
+    border-radius: 30px 30px 0 0;
 }
 
 .input-header {
@@ -27,18 +32,28 @@ html {
 }
 
 .input-section h3 {
+    color: white;
     font-size: 1.3rem;
     font-weight: 800;
+    margin-bottom: 2rem;
 }
 
-.input-section p {
+input {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: white;
     font-size: 6.1rem;
+    border: none;
+    outline: none;
+    width: 85%;
     font-weight: 800;
-    padding-top: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .converter-section {
+    background-color: hsl(215, 28%, 17%);
     padding: 2.3rem 0;
+    border-radius: 0 0 30px 30px;
 }
 
 .volume {
@@ -46,6 +61,11 @@ html {
 }
 
 .length_header, .volume_header, .mass_header {
+    color: white;
     font-weight: 600;
     padding-bottom: 1rem;
+}
+
+.units p{
+    color: hsl(0, 0%, 82%);
 }
