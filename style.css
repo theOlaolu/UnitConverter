@@ -14,11 +14,9 @@ body {
 }
 
 .container {
-    /* width: 35%;  will not be there */
     text-align: center;
-    /* margin: 12rem auto;  need to tweak */
-    /* border: 1px solid black; */
     border: 1px solid rgb(24, 24, 46);
+    border-radius: 30px;
 }
 
 .input-section {
@@ -78,12 +76,12 @@ input {
     }
 
     body {
-        padding: 0 0.9rem;
+        padding: 3rem 0.9rem;
     }
 
     .container {
         width: 100%;
-        margin: 4rem 0;
+        border-radius: 20px;
     }
 
     .input-section {
@@ -127,17 +125,24 @@ input {
 }
 
 @media screen and (min-width: 460px) and (max-width: 767px) {
+    body {
+        padding: 3rem 0;
+    }
     .container {
         width: 97%;
         max-width: 420px;
-        margin: 4rem auto;
+        margin: 0 auto;
     }
 }
 
 @media screen and (min-width: 768px) {
+    body {
+        padding: 7rem 0 12rem 0;
+    }
+
     .container {
         width: 75%;
         max-width: 600px;
-        margin: 7rem auto;
+        margin: 0 auto;
     }
 }
